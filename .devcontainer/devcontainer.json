@@ -23,7 +23,8 @@
 			"version": "latest",
 			"helm": "4.1.1",
 			"minikube": "none"
-		}
+		},
+		"ghcr.io/devcontainers/features/azure-cli:1": {}
 	},
 	// Use this environment variable if you need to bind mount your local source code into a new container.
 	"remoteEnv": {
