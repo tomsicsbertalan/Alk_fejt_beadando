@@ -1,6 +1,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using DataAccess;
+using WebApi.Filters;
 using WebApi.Repos;
 
 namespace WebApi.Configuration;
@@ -41,9 +42,14 @@ public static class AppConfiguration
 
     public static IServiceCollection AddDomainServices(this IServiceCollection services)
     {
+        // DI configuration
         services.AddSingleton<IMongoDbConnectionFactory, MongoDbConnectionFactory>();
         services.AddScoped<IHeroRepository, HeroRepository>();
         services.AddScoped<IMcpHeroRepository, McpHeroRepository>();
+
+        // Scoped dependency, because we validate each request individually but only once per request.
+        // If we would use this more than once per request, we would need to change this to a Transient dependency.
+        services.AddScoped<IHeroGuard, HeroGuard>();
 
         return services;
     }
