@@ -9,7 +9,10 @@ COPY WebApiTests ./WebApiTests/
 COPY HeroBackend.slnx global.json ./
 # Build and publish a release
 RUN dotnet publish -o out
-# It's a good practice to run tests inside the container
+
+# Test stage: it's a good practice to run tests inside the container
+FROM build AS test
+WORKDIR /App/out
 RUN dotnet test --no-build --verbosity normal
 
 # Runtime stage
