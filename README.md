@@ -98,6 +98,12 @@ Ez egy gyűjtőfogalom. Lényegében ide tartozik minden eltérő adatbázis imp
   _Példák: Azure Cosmos DB, Amazon DynamoDB._ <br />
   Fő előnyük a rugalmasság. Több adattárolási modellt, és a beépített API-kon keresztül több lekérdezési nyelvet is támogatnak, mindezt egyetlen adatbázisban. Ez segít hordozhatóbbá tenni az alkalmazásokat adatbázisok között. Jellemzően Cloud szolgáltatók biztosítják őket PaaS modellben, ahol gyárilag megoldott a globális skálázhatóság.
   Hátrányuk, hogy költségesek lehetnek, és nem teljesítenek olyan jól bizonyos helyzetekben, mint a specializált adatbázisok. Továbbá a konzisztencia trade-off azonos a Cassandra esetével, amit mindig hozzá kell igazítani az adott use case-hez.
+  - **Vektor adatbázisok**: <br />
+  _Példák: pgvector, Redis, Chroma, Pinecone._ <br />
+  Speciális, sok dimenziós embedding vektorok tárolására készült megoldások. Népszerűségük konvergál az LLM-ek és egyéb AI megoldások elterjedtségével.
+  Előnyük, hogy lehetővé teszik a keresést hasonlóság alapján, olyan algoritmusok segítségével, mint az [ANN](https://www.mongodb.com/resources/basics/ann-search).
+  Hátrányuk, hogy szükséges külső embedding modellek használata, ami vektorrá alakítja a tárolandó, többnyire teljesen struktúrálatlan adatokat (szöveg, kép, hang, egyéb bináris input).
+  Alkalmazási területek: RAG, semantic cache, recommendation engine.
 
 A megfelelő rendszer- és adattárolási design kulcsa a navigáció a megfelelő trade-off-ok között, aminek előfeltétele az adatok, és azok kapcsolatainak megértése, ismerete. Sok esetben elfogadható az adatok duplikációja, akár egy adatbázison belül, akár több speciálizált adatbázis között, ha ez javítja az alkalmazás teljesítményét. Ez mérhető kell, hogy legyen, jól definiált KPI-ok alapján.
 
