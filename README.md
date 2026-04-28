@@ -97,7 +97,3 @@ Ezek push es manualis futtatas eseten:
 - buildelik a backend vagy frontend image-et
 - feltoltik azt `ghcr.io` registry-be
 - provenance attestaciot is generalnak
-
-## Megjegyzes
-
-Ez a megvalositas a `REQSPEC.md` 31. soraig tarto kovetelmennyel kompatibilis scope-ra keszult. A microservice, Kubernetes CD es ArgoCD reszek kulon, magasabb szintu bovitesek.
