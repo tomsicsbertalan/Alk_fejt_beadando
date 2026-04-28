@@ -43,7 +43,7 @@ Alapertelmezett fejlesztoi URL: `http://localhost:5000`
 ```powershell
 cd source/WebUI
 npm install
-npm start
+npm start -- --port 4300
 ```
 
 Alapertelmezett fejlesztoi URL: `http://localhost:4200`
