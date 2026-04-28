@@ -1,16 +1,13 @@
-import { TestBed } from '@angular/core/testing';
+import { Hero } from './domain/hero';
 
-import { Hero } from './hero';
+describe('Hero model', () => {
+  it('stores a string id and a name', () => {
+    const hero: Hero = {
+      id: 'hero-1',
+      name: 'Batman',
+    };
 
-describe('Hero', () => {
-  let service: Hero;
-
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(Hero);
-  });
-
-  it('should be created', () => {
-    expect(service).toBeTruthy();
+    expect(hero.id).toBe('hero-1');
+    expect(hero.name).toBe('Batman');
   });
 });

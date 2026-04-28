@@ -16,9 +16,9 @@ export class HeroService {
     private messageService: MessageService
   ) { }
 
-  apiUrl = environment.apiUrl;
+  private readonly apiUrl = environment.apiUrl;
 
-  getHero(id: number): Observable<Hero> {
+  getHero(id: string): Observable<Hero> {
     const url = `${this.apiUrl}/hero/${id}`;
     return this.http.get<Hero>(url).pipe(
       tap(hero => this.messageService.add(`HeroService: fetched hero with id=${hero.id}`)),
@@ -37,7 +37,7 @@ export class HeroService {
   createHero(hero: Hero): Observable<Hero> {
     const url = `${this.apiUrl}/hero`;
     return this.http.post<Hero>(url, hero).pipe(
-      tap(heroe => this.messageService.add(`HeroService: created hero with name=${heroe.name}`)),
+      tap(createdHero => this.messageService.add(`HeroService: created hero with name=${createdHero.name}`)),
       catchError(this.handleError)
     );
   }
@@ -59,7 +59,7 @@ export class HeroService {
 
   deleteHero(id: string): Observable<void> {
     const url = `${this.apiUrl}/hero/${id}`;
-    return this.http.delete<{ id: number; deleted: boolean }>(url).pipe(
+    return this.http.delete<{ id: string; deleted: boolean }>(url).pipe(
       map(res => {
         if (res.deleted) {
           this.messageService.add(`HeroService: deleted hero with id=${id}`);
@@ -67,7 +67,8 @@ export class HeroService {
           this.messageService.add(`HeroService: hero with id=${id} not found`);
         }
         return;
-      })
+      }),
+      catchError(this.handleError)
     );
   }
 

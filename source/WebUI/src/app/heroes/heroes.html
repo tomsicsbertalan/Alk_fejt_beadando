@@ -1,6 +1,7 @@
 <h2>My Heroes</h2>
+<p class="text-muted">Page {{ currentPage() }} / {{ totalPages() }}</p>
 <ol class="list-group list-group-numbered">
-    @for (hero of heroes(); track hero.id; let e = $even) {
+    @for (hero of paginatedHeroes(); track hero.id; let e = $even) {
     <li [ngClass]="hero === selectedHero() ? 'list-group-item list-group-item-primary' : (e ? 'list-group-item list-group-item' : 'list-group-item-secondary list-group-item')"
         class="d-flex align-items-start justify-content-between" (click)="onSelect(hero)" role="button" tabindex="0"
         (keydown.enter)="onSelect(hero)" (keydown.space)="onSelect(hero)">
@@ -14,4 +15,9 @@
     }
 </ol>
 
-<app-hero-detail [hero]="selectedHero()" (heroDeleted)="onDelete($event)" (heroCanceled)="onCancel()"></app-hero-detail>
+<div class="d-flex gap-2 mt-3 mb-4">
+    <button class="btn btn-outline-secondary" (click)="goToPreviousPage()" [disabled]="!canGoToPreviousPage()">Previous</button>
+    <button class="btn btn-outline-secondary" (click)="goToNextPage()" [disabled]="!canGoToNextPage()">Next</button>
+</div>
+
+<app-hero-detail [hero]="selectedHero()" (heroSaved)="onSaved($event)" (heroDeleted)="onDelete($event)" (heroCanceled)="onCancel()"></app-hero-detail>

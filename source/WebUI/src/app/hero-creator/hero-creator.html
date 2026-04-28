@@ -1,8 +1,12 @@
 <div class="card p-3">
     <h2 class="card-title">Create New Hero</h2>
+    <p class="text-muted">Create a hero, then return to the list to edit or delete it.</p>
     <div class="mb-3">
         <label for="hero-name" class="form-label">Hero name:</label>
         <input id="hero-name" class="form-control" [(ngModel)]="name" placeholder="name">
     </div>
-    <button type="button" class="btn btn-success" (click)="create()">Create</button>
+    <div class="d-flex gap-2">
+        <button type="button" class="btn btn-success" (click)="create()">Create</button>
+        <a class="btn btn-outline-secondary" routerLink="/">Back to heroes</a>
+    </div>
 </div>

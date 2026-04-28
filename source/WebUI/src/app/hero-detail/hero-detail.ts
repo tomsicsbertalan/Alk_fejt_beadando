@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output, input, output } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { Hero } from '../domain/hero';
 import { FormsModule } from '@angular/forms';
 import { HeroService } from '../hero-service';
@@ -15,6 +15,7 @@ export class HeroDetail {
   constructor(private heroService: HeroService) { }
 
   hero = input<Hero | undefined>();
+  heroSaved = output<Hero>();
   heroDeleted = output<string>();
   heroCanceled = output<void>();
 
@@ -24,6 +25,7 @@ export class HeroDetail {
         next: res => {
           if (res.updated) {
             console.log(`Hero with id=${this.hero()?.id} updated successfully.`);
+            this.heroSaved.emit(this.hero()!);
           } else {
             console.log(`Hero with id=${this.hero()?.id} not updated.`);
           }

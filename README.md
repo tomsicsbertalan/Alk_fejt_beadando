@@ -1,291 +1,103 @@
-# B-ALKFET - Alkalmazásfejlesztési technológiák
-A mindenkori legfrissebb verzió elérhető [GitHub](https://github.com/MilanNemeth/GDE_B-ALKFET)-on.
+# B-ALKFET Hero App
 
-## Tanulási segédlet
-A világ és az IT szektor is gyorsan változik. Kulcsfontosságú tehát, hogy gyorsan és hatékonyan tanuljunk. Kellő tapasztalattal, fejlesztőként, egy új technológiát gyorsan el kell tudni  sajátítani.
+Ez a repository egy egyszeru full-stack mintaalkalmazast tartalmaz:
+- frontend: Angular 21
+- backend: ASP.NET Core minimal API
+- adatbazis: MongoDB
 
-Javasolt a következő módszertan alkalmazása, az alkalmas eszközök megjelölésével:
-1. **Álljon össze a "big picture" (jegyzet, kurzus, önálló tevékenység).** <br />
-    Alkalmazásfejlesztési technológiák esetén meg kell határozni annak minden alterületét, hogy le tudjuk szűkíteni a scope-ot, amivel foglalkozni szeretnénk.
-2. **Vegyük a nagy témát, és szűkítsük le egy kisebb, racionális méretű területre, ami még érdekel is (jegyzet, kurzus, önálló tevékenység).** <br />
-    Például: Játékfejlesztés, webfejlesztés, IoT fejlesztés, stb.
-3. **Határozzuk meg a siker definícióját (kurzus, önálló tevékenység).** <br />
-    Ennek a végére meg kell fogalmazódjon egy viszonylag rövid és tömör állítás arról, hogy hova szeretnénk eljutni. Pl.: "High-end single-player FPS játék készítése Unreal Engine használatával."
-4. **Keressünk forrásokat, amelyek segíthetnek elérni a kitűzött célt (jegyzet, kurzus, önálló tevékenység).** <br />
-    Ezek lehetnek: könyvek, blogok, online kurzusok, YouTube videók, podcast adások, stb. Fontos, hogy megbízható és releváns forrásokat válasszunk, amik jól illeszkednek a tanulási stílusunkhoz. Nézzük meg a rendelkezésre álló visszajelzéseket (lájkok, review-k, hozzászólások), hogy meg tudjuk ítélni a forrás minőségét objektíven, de mérlegeljük a szubjektív benyomásainkat is.
-5. **Készítsünk tanulási tervet, ami igazodik az aktuális tudásszintünkhöz (önálló tevékenység).** <br />
-    Fontos, hogy a tanulási terv reális és megvalósítható legyen. Osszuk fel a tanulási folyamatot kisebb, kezelhető részekre, és határozzunk meg konkrét időkereteket a tanulásra. 
-6. **Szűrjük meg a forrásokat úgy, hogy azok a legjobban igazodjanak a tanulási tervhez (önálló tevékenység).** <br />
-    Állítsunk fel egy sorrendet a tanulási források között, és szelektáljuk ki azokat, amik túl nagy részletességel taglalják a témát.Részesítsük előnyben a hands-on forrásokat, ahol lehetőség van gyakorlat közben megismerni a területet (pl.: rövidebb online kurzusok, max kb. 1 órás crash-course videók). A hatalmas, száraz, elméleti anyagokat hagyjuk meg a későbbi szakaszokra, amikor már van egy jó alapunk, és egy célzott probléma megoldására keresünk precíz választ (pl.: vastag könyvek, hatalmas technikai dokumentációk). Még soha senki nem sajátított el új készséget a dokumentáció végigolvasásával!
-7. **Tanuljunk épp eleget, ami minimálisan elégséges ahhoz, hogy tudjunk csinálni valamit a gyakorlatban (önálló tevékenység).** <br />
-    Fontos, hogy minél előbb billentyűzetet ragadjunk, és bepiszkoljuk a kezünket a témával. A tanulás nem egy passzív folyamat, hanem egy aktív, gyakorlati tevékenység. Minél előbb elkezdünk gyakorolni, annál gyorsabban fogunk fejlődni.
-8. **Kezdjünk el játszani az új technológiával (önálló tevékenység).** <br />
-    Szórakozzunk, kísérletezzünk, próbáljuk ki, hogy az elképzeléseink/feltételezéseink megállnak-e a gyakorlatban is. Hibázzunk, és tanuljunk a hibákból, mert a sikerekből biztosan nem fogunk! A játékosság segít fenntartani a motivációt, és lehetővé teszi, hogy kreatív módon fedezzük fel az új technológiát. Próbáljunk ki mindent, ami eszünkbe jut, és járjunk utána a váratlan eredményeknek.
-9. **Folytassuk a tanulást azzal a fókusszal, hogy valami hasznosat tudjunk csinálni (önálló tevékenység).** <br />
-    Ha kijátszottuk magunkat, erősítsük meg az így megszerzett gyakorlati tudást még egy kis elmélettel, amit így már lesz hova tenni. Amint elég tudásunk van ahhoz, hogy valami hasznosat csináljunk, kezdjünk el dolgozni egy projekten, ami érdekel minket. Ez lehet egy személyes projekt, egy open-source hozzájárulás, vagy akár egy munkahelyi feladat. A lényeg, hogy alkalmazzuk a tanultakat a gyakorlatban, és folyamatosan fejlesszük a készségeinket.
-10. **Tanítsunk! Adjuk tovább a tudást (kurzus, önálló tevékenység).** <br />
-    A tanítás az egyik leghatékonyabb módja annak, hogy elmélyítsük a saját tudásunkat. Amikor megpróbáljuk elmagyarázni egy másik embernek, hogy hogyan működik valami, akkor kénytelenek vagyunk rendszerezni a tudásunkat, és tisztázni a fogalmakat. Ez segít abban, hogy jobban megértsük a témát, és észrevegyük az esetleges vakfoltjainkat. Emellett a tanítás lehetőséget ad arra is, hogy kapcsolatba lépjünk másokkal, akik hasonló érdeklődésűek, és hogy közösen tanuljunk és fejlődjünk.
+Az alkalmazas egy egyszeru `Hero` domain modellt kezel teljes CRUD funkcionalitassal.
 
-## Adatbázis technológiák és adatintegráció
-Kapcsolódó Microsoft kurzus: [DP-900](https://learn.microsoft.com/en-us/training/courses/dp-900t00)
+## Fobb funkciok
+- hosok listazasa
+- lapozas a listaoldalon
+- uj hos letrehozasa
+- hos szerkesztese
+- hos torlese
+- backend CRUD API kiprobalasa `.http` fajllal
 
-### Adatintegráció
-Az adatintegráció a modern adattárház-architektúra kiindulópontja, vagyis az a folyamat, ahol a különböző forrásokból érkező adatot elemzésre alkalmassá tesszük. Ebben a szakaszban nem pusztán adatmozgatás történik, hanem célzott adat-előkészítés is.
+## Projekt szerkezet
+- `source/WebUI`: Angular frontend
+- `source/WebApi`: ASP.NET Core backend
+- `source/DataAccess`: MongoDB kapcsolat
+- `source/Domain`: kozos domain modellek
+- `source/WebApiTests`: backend tesztek
+- `.github/workflows`: Docker image build es push workflow-k
 
-Tipikus források:
-- adatbázisok,
-- fájlalapú források,
-- valós idejű adatfolyamok (streaming),
-- egyéb források.
+## Lokal fejlesztoi futtatas
 
-Egy nagy adat-analitikai architektúra változatosan nézhet ki, ahogyan a konkrét technológiai megvalósítása is, de általánosságbanban a folyamat a következőképpen zajlik:
+### 1. MongoDB inditasa Dockerrel
+```powershell
+docker run -d --name balkfet-mongodb -p 27017:27017 mongo:8
+```
 
-A beérkező adatok célhelye jellemzően egy speciálisan erre a célra kialakított analitikai tároló megoldás. A betöltés során az adatokat tisztítjuk, szűrjük és átstrukturáljuk, hogy megfeleljenek az analitikai felhasználás igényeinek.
+### 2. Backend inditasa
+```powershell
+cd source/WebApi
+$env:MongoDb__ConneX="mongodb://localhost:27017"
+dotnet run
+```
 
-Az adatintegráció két elterjedt folyamatsémája:
-- **ETL (Extract, Transform, Load):** az adatok a betöltés előtt esnek át transzformáción, így a célrendszerbe már feldolgozott állapotban kerülnek.
-- **ELT (Extract, Load, Transform):** a nyers adatok először betöltésre kerülnek a célrendszerbe, és a transzformáció ezt követően, a tárolón belül történik.
+Alapertelmezett fejlesztoi URL: `http://localhost:5000`
 
-Az ETL és az ELT közti fő különbség a lépések sorrendje, ugyanakkor a cél közös: olyan adatszerkezet kialakítása, amely optimális analitikai műveletekhez. A megfelelő módszer kiválasztása nagyban függ az adatok mennyiségétől és minőségétől.
+### 3. Frontend inditasa
+```powershell
+cd source/WebUI
+npm install
+npm start
+```
 
-Nagy adatmennyiségnél a feldolgozás tipikusan elosztott rendszerekben történik. Ilyenkor többcsomópontos (multi-node) klaszterek dolgoznak párhuzamosan, ami lehetővé teszi a magas adatmennyiség hatékony, skálázható feldolgozását.
+Alapertelmezett fejlesztoi URL: `http://localhost:4200`
 
-Működés szempontjából az adatintegráció egyszerre támogatja:
-- a **batch feldolgozást** (statikus adatok időszakos betöltése és feldolgozása),
-- a **valós idejű feldolgozást (streaming)** (folyamatosan érkező adatfolyamok kezelése és feldolgozása).
+## Hasznalat
 
-Ez a réteg teremti meg az alapot a későbbi analitikai adattárolási, modellezési és vizualizációs lépések számára.
+### Hero lista
+Az alkalmazas nyitooldala a hero lista. Itt:
+- megjelennek a backendbol betoltott hosok
+- az elemekre kattintva megnyilik a szerkeszto panel
+- a `Previous` es `Next` gombokkal lehet lapozni
 
-### Adatbázis technológiák
-Az adatbázis technológiák a modern adattárház-architektúra központi elemei, amelyek lehetővé teszik az adatok hatékony tárolását, lekérdezését és kezelését. Az adatbázisoknak különböző típusai léteznek, amelyek más-más adattárolási és lekérdezési modelleket kínálnak. Éppen ezért a kiválasztásuk nagyban függ az alkalmazási terület sajátosságaitól, valamint az adatok szerkezetétől, azok kapcsolataitól és a használati mintáktól.
+### Hero letrehozas
+A `Hero Creator` oldalon egy uj nev megadasaval uj hero hozhato letre. Letrehozas utan vissza lehet lepni a listara, ahol az uj elem mar megjelenik.
 
-- **Relációs adatbázisok (RDBMS)**: <br />
-_Példák: MySQL, PostgreSQL, Microsoft SQL Server._ <br />
-Az adatok táblákban vannak tárolva, amelyek sorokból és oszlopokból állnak. Jellemzően erős konzisztenciát biztosítanak.
-A tranzakciókra jellemző az ACID (Atomicity, Consistency, Isolation, Durability), ami garantálja az adatok integritását és megbízhatóságát. 
-Ez teszi őket ideálissá olyan alkalmazásokhoz, ahol fontos az adatok pontossága és megbízhatósága (pl.: pénzügyi rendszerek, ügyféladatbázisok, stb...).
-SQL (Structured Query Language) használatával lehet lekérdezni és manipulálni az adatokat, ami egy széles körben elterjedt és jól ismert nyelv.
-Hátrányuk, hogy nem mindig hatékonyak nagy mennyiségű, gyorsan változó vagy nem strukturált adatok kezelésére.
-Egy különleges megvalósítása a _CockroachDB_, amely gyárilag (out-of-the-box) egy elosztott SQL adatbázis, ami a relációs adatbázisok előnyeit ötvözi az elosztott rendszerek skálázhatóságával és hibatűrésével (horizontális skálázás). <br />
-A PostgreSQL különböző bővítményeken keresztül nagy rugalmasságot biztosít, ami túlmutat a klasszikus RDBMS kereteken.
-- **Nem-relációs adatbázisok (NoSQL)**: <br />
-Ez egy gyűjtőfogalom. Lényegében ide tartozik minden eltérő adatbázis implementáció, ami nem követi az RDBMS modellt. Több különböző típusú adatbázist foglal magában, amik között érdemes disztingválni, mert más-más adattárolási és lekérdezési modellt támogatnak, és más-más alkalmazási területeken lesznek optimálisak:
-  - **Columnar adatbázisok**: <br />
-  _Példák: Amazon Redshift, Google BigQuery._ <br />
-  Az adatokat ugyan úgy kell elképzelni, mint a relációs adatbázisoknál, táblákban, sorokból és oszlopokból. A fizikai tárolás (memory layout) viszont oszlop-alapú, nem pedig rekord avagy sor-alapú. Ebből kifolyólag nagyon hatékonyak aggregációk és analitikai lekérdezések végrehajtására, ahol jellemzően csak egy vagy néhány oszlopra van szükség, és nem teljes rekordokra.
-  Hátrányuk, hogy nem ideálisak teljes rekordos, sor-alapú műveletekhez (tranzakciók).
-  - **Kulcs-érték adatbázisok**: <br />
-  _Példák: Redis, etcd._ <br />
-  Az adatokat kulcs-érték párok formájában tárolják, ahol a kulcs egyedi azonosítóként szolgál. A kulcsok és az értéket megengednek némi össszetettséget, de alapvetően egyszerűbb adatszerkezetek tárolására lettek kitalálva (string, hash, json, stb.). Nagyon gyorsak és hatékonyak egyszerű lekérdezésekhez és írás műveletekhez. Ideálisak központi cache- és konfiguráció-management, elosztott lockolás, vagy bizonyos esetekben akár message-broker funkciók megvalósítására is.
-  Hátrányuk, hogy nem alkalmasak összetett lekérdezések és komplex (relációs) adatszerkezetek kezelésére.
-  - **Gráf adatbázisok**: <br />
-  _Példák: Neo4j, Apache TinkerPop._ <br />
-  Az adatokat tulajdonságok (properties), csomópontok (nodes) és élek (edges) formájában tárolják, amely optimálissá teszi őket kapcsolati modellek tárolására. Olyan alkalmazásokhoz ideálisak, ahol a kapcsolatok kiemelt szerepet játszanak (pl.: közösségi hálók, összetett infrastruktúrák, hálózati topológiák, ajánlórendszerek, stb.). Közismert lekérdezési nyelvek a Cypher és a Gremlin.
-  Fő hátrányuk, hogy más, általánosabb jellegű adattárolásra nem optimálisak.
-  - **Dokumentum-alapú adatbázisok**: <br />
-  _Példák: MongoDB._ <br />
-  Az adatokat dokumentumok formájában tárolják, pl. BSON (Binary JSON) formátumban. Ez lehetővé teszi a rugalmas és dinamikus sémát, ami jól illeszkedik félstrukturált adatokhoz. Ideálisak olyan alkalmazásokhoz, ahol a sémaváltozás gyakori, vagy nincs is séma, vagy esetleg az adatszerkezet dinamikusan bővíthető kell hogy maradjon. Gyakran duplikáljuk és egymásba ágyazzuk az adatokat, compute optimalizáció céljából, így a lekérdezések gyorsabbak lesznek, de ez a redundanciák miatt nagyobb tárhelyet igényel. 
-  Hátrányuk, hogy nem optimálisak storage optimalizálásra, JOIN műveletekhez, és a logikailag összetartozó műveletek alapból nem feltétlenül atomikusak. 
-  - **Idő-sor adatbázisok**: <br />
-  _Példák: Prometheus, InfluxDB._ <br />
-  Az adatokat időbélyeggel ellátott értékek formájában tárolják, ami ideálissá teszi őket idő-sor adatok kezelésére (pl.: monitoring: logok, tracek, metrikák; szenzor adatok; események és egyéb analitikai adatok). Olyan kulcs-érték adatbázisként kell elképzelni, ahol a kulcsok specifikusan időbélyegre optimalizáltak.
-  Fő hátrányuk, hogy más, általánosabb jellegű adattárolásra nem optimálisak.
-  - **Wide-column adatbázisok**: <br />
-  _Példák: Apache Cassandra._ <br />
-  Az adatokat táblákban tárolja, rugalmas sémával, és a rendszerezéshez partíciókulcsokat használ. Elosztott rendszerben működik, ahol az olvasási/írási műveletek lineárisan skálázódnak új Node-ok hozzáadásával. Mellérendelő hierarchiában valósítja meg a horizontális skálázást, vagyis nincs master/primary node. Olyan alkalmazásokhoz optimális, ahol kritikus az átlagon felüli throughput és a magas rendelkezésre állás biztosítása, nagy volumenű forgalom mellett. Lekérdezési nyelve a CQL (Cassandra Query Language), ami SQL-szerű, de nem támogatja a JOIN műveleteket.
-  Hátránya, hogy nem optimálisak összetett lekérdezésekhez és tranzakciókhoz. Relációs struktúrák helyett az adatokat denormalizálni kell, és a lekérdezési mintázatokhoz alakítani. Kulcs trade-off, hogy a rendelkezésre állás fordítottan arányos a konzisztencia szintekkel, ami gyakori jellemzője elosztott rendszereknek (CAP theorem).
-  - **Multi-model adatbázisok**: <br />
-  _Példák: Azure Cosmos DB, Amazon DynamoDB._ <br />
-  Fő előnyük a rugalmasság. Több adattárolási modellt, és a beépített API-kon keresztül több lekérdezési nyelvet is támogatnak, mindezt egyetlen adatbázisban. Ez segít hordozhatóbbá tenni az alkalmazásokat adatbázisok között. Jellemzően Cloud szolgáltatók biztosítják őket PaaS modellben, ahol gyárilag megoldott a globális skálázhatóság.
-  Hátrányuk, hogy költségesek lehetnek, és nem teljesítenek olyan jól bizonyos helyzetekben, mint a specializált adatbázisok. Továbbá a konzisztencia trade-off azonos a Cassandra esetével, amit mindig hozzá kell igazítani az adott use case-hez.
-  - **Vektor adatbázisok**: <br />
-  _Példák: pgvector, Redis, Chroma, Pinecone._ <br />
-  Speciális, sok dimenziós embedding vektorok tárolására készült megoldások. Népszerűségük konvergál az LLM-ek és egyéb AI megoldások elterjedtségével.
-  Előnyük, hogy lehetővé teszik a keresést hasonlóság alapján, olyan algoritmusok segítségével, mint az [ANN](https://www.mongodb.com/resources/basics/ann-search).
-  Hátrányuk, hogy szükséges külső embedding modellek használata, ami vektorrá alakítja a tárolandó, többnyire teljesen struktúrálatlan adatokat (szöveg, kép, hang, egyéb bináris input).
-  Alkalmazási területek: RAG, semantic cache, recommendation engine.
+### Hero szerkesztes es torles
+A listaoldalon kivalasztott hero a szerkeszto panelben modosithato:
+- `Save`: modositas mentese
+- `Delete`: torles
+- `Cancel`: szerkesztes bezarasa
 
-A megfelelő rendszer- és adattárolási design kulcsa a navigáció a megfelelő trade-off-ok között, aminek előfeltétele az adatok, és azok kapcsolatainak megértése, ismerete. Sok esetben elfogadható az adatok duplikációja, akár egy adatbázison belül, akár több speciálizált adatbázis között, ha ez javítja az alkalmazás teljesítményét. Ez mérhető kell, hogy legyen, jól definiált KPI-ok alapján.
+## Backend API
 
-[Bővebben a normalizációról, denormalizációról](https://youtu.be/bKDaL-GRSAM?list=PLLasX02E8BPDd2fKwLCHnmWoyo4bL-oKr)
+A backend a kovetkezo endpointokat adja:
+- `GET /hero`
+- `GET /hero/{id}`
+- `POST /hero`
+- `PUT /hero/{id}`
+- `DELETE /hero/{id}`
 
+Kezi API teszteleshez hasznald a `source/WebApi/WebApi.http` fajlt.
 
-## Felhőalapú alkalmazásfejlesztés és platformok
-Kapcsolódó Microsoft kurzus: [AZ-900](https://learn.microsoft.com/en-us/training/courses/az-900t00)
-### Container technológiák
-#### Docker
-##### Bevezetés
-A Docker egy nyílt forráskódú platform, amely lehetővé teszi a fejlesztők számára, hogy alkalmazásokat és szolgáltatásokat konténerekben csomagoljanak, szállítsanak és futtassanak. A Docker konténerek könnyűek, hordozhatóak és gyorsan indíthatóak, ami megkönnyíti az alkalmazások fejlesztését, tesztelését és üzemeltetését különböző környezetekben. A Docker használatával a fejlesztők biztosíthatják, hogy az alkalmazásuk ugyanúgy működjön a fejlesztői gépen, a tesztkörnyezetben és a gyártási környezetben is, minimalizálva a "works on my machine" problémákat.
-A [nyílt konténer specifikációknak](https://notes.kodekloud.com/docs/Kubernetes-and-Cloud-Native-Associate-KCNA/Cloud-Native-Architecture/Open-Standards/page) köszönhetően, mára számos alternatíva létezik. 
-Ezek közül néhány a teljesség igénye nélkül:
- - [Podman](https://docs.podman.io/en/latest/): egy démon nélküli konténer runtime, ahol K8s mintájára, podokba csomagolhatók a konténerek.
- - [Containerd](https://containerd.io/): konténer runtime névtér támogatással.
- - [gVisor](https://gvisor.dev/): egy konténer runtime, amely kernel funkciók helyett virtualizációval biztosít szigorúbb process izolációt.
- Egyenlőre nem érdemes a fentiekben túlzottan elmélyedni, de érdemes tudni, hogy léteznek, és hogy a Docker nem az egyetlen megoldás a konténerizációra.
+## Docker image build
 
-##### Konténerizáció vs Virtualizáció
-A konténerizáció és a virtualizáció két különböző technológia, amelyek célja az alkalmazások izolálása és futtatása különböző környezetekben, de [eltérő módon működnek](https://www.atlassian.com/microservices/cloud-computing/containers-vs-vms).
-- **Virtualizáció**: A virtualizáció során egy fizikai gépen több virtuális gépet (VM) hozunk létre, amelyek mindegyike saját operációs rendszert futtat. Minden VM egy teljes operációs rendszer példányt tartalmaz, ami jelentős erőforrásokat igényel. A virtualizáció lehetővé teszi, hogy különböző operációs rendszereket futtassunk ugyanazon a fizikai gépen, de a VM-ek közötti kommunikáció és erőforrásmegosztás lassabb, mint konténerizáció esetén. Fő komponense a hypervisor, amely a VM-eket kezeli és izolálja egymástól.
-- **Konténerizáció**: A konténerizáció során az alkalmazásokat és azok függőségeit egy konténerbe csomagoljuk, amely ugyanazt az operációs rendszert használja, mint a host gép. A konténerek könnyűek, hordozhatóak és gyorsan indíthatóak, mivel nem futnak teljes operációs rendszer példányt, hanem közvetlenül a host gép operációs rendszerére építenek. Fő komponense a konténer runtime, amely a konténerek létrehozásáért, futtatásáért és kezeléséért felelős.
+Mindket modulhoz van kulon Dockerfile:
+- `source/WebApi/Dockerfile`
+- `source/WebUI/Dockerfile`
 
-##### Docker komponensek
-- **Docker Engine**: Ez a Docker alapja, amely egy kliens-szerver architektúrában működik. A Docker Engine egy démon (dockerd), ami a háttérben futó backend, és kezeli a konténereket. A CLI (docker) pedig a frontend, amely lehetővé teszi a felhasználók számára, hogy parancsokat küldjenek a démonnak. Ezt használjuk imagek létrehozására, konténerek indítására, leállítására, stb.
-- **Docker Hub**: Nyilvános container registry, ahol a fejlesztők megoszthatják egymással és letölthetik a Docker imageket. A Docker Hub lehetővé teszi a felhasználók számára, hogy könnyen hozzáférjenek előre elkészített imagekhez, vagy megosszák sajátjaikat a közösséggel.
+Lokalis build:
+```powershell
+pwsh ./tools/docker_build_all.ps1
+```
 
-##### Konténer komponensek
-- **Dockerfile**: Egy Dockerfile egy szöveges fájl, vagy image blueprint, amely jól verziókezelhető, és tartalmazza a lépéseket, amelyek szükségesek egy Docker image létrehozásához. A Dockerfile-ban meghatározhatjuk az alap image-t, a szükséges csomagokat, a környezeti változókat, a parancsokat, amelyek futtatásra kerülnek a konténer indításakor, és egyéb konfigurációkat. Docker image készítése Dockerfile használatával a legegyszerűbb. [Dockerfile reference](https://docs.docker.com/reference/dockerfile/)
-- **Image**: Egy image egy statikus fájlrendszer, vagy container blueprint, amely tartalmazza az alkalmazást és annak összes függőségét. Az image egy előre definiált állapotot képvisel, amelyből konténereket lehet létrehozni.
-- **Container registry**: Egy remote tárolóhely (pl.: Docker Hub, GHCR, ACR, stb...), ahol a Docker image-eket tárolják és osztják meg. Docker esetén Docker Hub a default container registry.
-- **Container**: Egy konténer egy futó példánya egy adott image-nek.
+## CI workflow
 
-##### Gyakori Docker parancsok
+A repository kulon GitHub Actions workflow-kat tartalmaz:
+- `.github/workflows/ci-docker-build-api.yml`
+- `.github/workflows/ci-docker-build-ui.yml`
 
-###### docker build
-Docker image létrehozása egy Dockerfile alapján.
-`docker build -t <image-név:tag> -f <dockerfile-útvonala> <egyéb-argumentumok> <build-context>`
-- image-név:tag: Az image neve és opcionális tag-je (pl.: "myapp:latest"). Ha a tag-et nem adjuk meg, akkor "latest" lesz az alapértelmezett.
-- dockerfile-útvonala: A Dockerfile helye a fájlrendszeren. Ez lehet egy relatív vagy abszolút útvonal. Elhagyható, amennyiben az aktív working directory-ben van egy "Dockerfile" nevű fájl. Ez az alapértelmezett viselkedés.
-- egyéb-argumentumok: Opcionális argumentumok, amelyek a build folyamatot befolyásolják. Például:
-  - `--no-cache`: Nem használ cache-t a build során, így minden réteget újra létrehoz.
-  - `--build-arg`: Build argumentumokat adhatunk át a Dockerfile-nak, amelyeket a Dockerfile-ban `ARG` utasítással használhatunk.
-- build-context: Az az útvonal, amely a Dockerfile-ban megadott fájlokhoz és könyvtárakhoz való hozzáférést biztosít. Ez általában a Dockerfile helye, de lehet egy másik könyvtár is, ha a Dockerfile-ban megadott fájlok ott találhatók.
-Példák: 
-- `docker build -t myapp:latest -f ./Dockerfile .`
-- `docker build -t myapp:latest .` (a `.` jelzi az aktuális könyvtárat)
-- `docker build -t myapp:latest ..` (a `..` jelzi a parent könyvtárat)
-- `docker build -t myapp:latest ./my-service`
-- `docker build -t myapp:latest ../my-service`
+Ezek push es manualis futtatas eseten:
+- buildelik a backend vagy frontend image-et
+- feltoltik azt `ghcr.io` registry-be
+- provenance attestaciot is generalnak
 
-[Docker build reference](https://docs.docker.com/build/)
+## Megjegyzes
 
-###### docker run
-Egy új konténer indítása egy adott image-ből.
-`docker run <egyéb-argumentumok> <image-név:tag> <opcionális-parancs>`
-- egyéb-argumentumok: Opcionális argumentumok, amelyek a konténer futtatását befolyásolják. Például:
-  - `-d` vagy `--detach`: A konténert háttérben futtatja, és visszaadja a konténer ID-jét.
-  - `-p` vagy `--publish`: Portokat mappel a host gép és a konténer között (pl.: `-p 8080:80`). Lehetővé teszi, hogy a konténerben futó szolgáltatások elérhetőek legyenek a host gépen, vagy akár a helyi hálózaton keresztül.
-  - `-v` vagy `--volume`: Könyvtárakat vagy fájlokat csatol a host gépről a konténerbe, vagy docker volume-ot mountol a konténerbe (pl.: `-v /host/path:/container/path`). [Volume reference](https://docs.docker.com/engine/storage/volumes/) vs [Bind mounts reference](https://docs.docker.com/engine/storage/bind-mounts/)
-  - `-e` vagy `--env`: Környezeti változókat adhatunk át a konténernek (pl.: `-e ENV_VAR=value`).
-  - `--name`: Nevet adhatunk a konténernek, ami megkönnyíti a későbbi hivatkozást rá (pl.: `--name my-container`).
-  - `--rm`: A konténer automatikusan törlődik, amikor leáll.
-- image-név:tag: Az image neve és opcionális tag-je, amelyből a konténert létrehozzuk (pl.: "myapp:latest").
-- opcionális-parancs: Opcionális parancs, amelyet a konténer indításakor futtatni szeretnénk. Ha nem adunk meg parancsot, akkor a konténer az image-ben definiált alapértelmezett parancsot fogja futtatni.
-Példák:
-- `docker run -d -p 8080:80 --name my-container myapp:latest`
-- `docker run -e ENV_VAR=value myapp:latest`
-
-[Docker run reference](https://docs.docker.com/reference/cli/docker/run/)
-
-###### Egyéb hasznos Docker parancsok
-- `docker ps`: Futó konténerek listázása.
-- `docker start`|`docker restart`|`docker stop`: Konténer indítása, újraindítása vagy leállítása.
-- `docker rm`: Egy konténer törlése.
-- `docker rmi` vagy `docker image rm`: Egy Docker image törlése.
-- `docker pull`: Egy Docker image letöltése egy container registry-ből.
-- `docker push`: Egy Docker image feltöltése egy container registry-be.
-- `docker logs`: Egy konténer logjainak megtekintése.
-- `docker exec`: Parancs futtatása egy futó konténerben.
-- `docker inspect`: Egy konténer vagy image részletes információinak megtekintése.
-- `docker save`: Egy Docker image mentése `.tar` fájlba, ha mondjuk nem registry-ben szeretnénk megoszatni.
-- `docker load`: Egy Docker image betöltése egy `.tar` fájlból.
-- `docker commit`: Egy futó konténer állapotának mentése egy új Docker image-ként.
-- `docker tag`: Egy Docker image új címkézése, ami hasznos lehet a registry-kbe való feltöltés előtt.
-- `docker network`: Docker hálózatok kezelése.
-- `docker volume`: Docker kötetek kezelése.
-
-
-#### Container Orchestration - Kubernetes (K8s)
-
-##### Kubernetes bevezetés
-A Kubernetes egy nyílt forráskódú platform, amelyet a Google fejlesztett ki. Lehetővé teszi a konténerizált alkalmazások automatikus telepítését, skálázását és kezelését. A Kubernetes egy konténer orchestrációs rendszer, amely segít a fejlesztőknek és az üzemeltetőknek abban, hogy hatékonyan kezeljék a konténereket nagy léptékben, különböző környezetekben, miközben biztosítják a magas rendelkezésre állást és a hibatűrést. Ez egy komplex rendszer, amely számos komponensből áll, és sokféle funkciót kínál.
-
-##### Kubernetes architektúra
-
-![Kubernetes Cluster Architektúra](https://kubernetes.io/images/docs/kubernetes-cluster-architecture.svg)
-
-Egy Cluster fő építőeleme a Node, amely egy fizikai vagy virtuális gépet jelent. A cluster futhat egy vagy több Node-on. A Node-ok két fő típusa a Master aka. Control Plane Node és a Worker Node. A Control Plane felelős a cluster irányításáért, ezen futnak a Kubernetes rendszer komponensei. A Worker Node-ok futtatják az általunk meghatározott workload-okat.
-Single Node cluster esetén a Control Plane és a Worker Node ugyanaz. Ebben az esetben a cluster minden komponense ugyanazon a gépen fut. Ez ideális fejlesztéshez és teszteléshez, de nem ajánlott éles környezetben, mivel nem biztosítja a magas rendelkezésre állást és a hibatűrést.
-Multi Node cluster esetén a Control Plane és a Worker Node-ok külön gépeken futnak. Ez lehetővé teszi a magas rendelkezésre állást és a hibatűrést, mivel ha egy Node meghibásodik, a többi Node továbbra is működik, és a cluster képes fenntartani az alkalmazások elérhetőségét.
-
-Főbb rendszer komponensek:
-- **kube API server**: A központi kompnens, amin keresztül kapcsolódik a többi rendszer komponens. Mi is ehhez csatlakozunk `kubectl` vagy egyéb kliens használatával. Ezen egy REST API fut, amivel mTLS kapcsolaton keresztül lehet kommunikálni.
-- **controller manager**: Felelős a cluster állapotának fenntartásáért. Folyamatosan figyeli a cluster állapotát, és ha eltérést észlel a kívánt állapot és a tényleges állapot között, akkor megteszi a szükséges lépéseket az eltérés korrigálására.
-- **scheduler**: Felelős a Podok ütemezéséért a Worker Node-okra. Amikor egy új Pod jön létre, a Scheduler meghatározza, hogy melyik Node-on fog futni, figyelembe véve a Node erőforrásait, a Pod követelményeit és egyéb tényezőket.
-- **etcd**: Egy kulcs-érték adatbázis, amely a cluster állapotát tárolja elosztott módon.
-- **kubelet**: Minden Worker Node-on fut, és felelős a Podok futtatásáért és karbantartásáért a Node-on. A Kubelet folyamatosan kommunikál az API Server-rel, hogy jelentse a Node állapotát és a rajta futó Podok állapotát. Ez tartja a kapcsolatot az azonos Node-on lévő container runtime-mal (by-default containerd).
-- **kube proxy**: Minden Worker Node-on fut, és felelős a hálózati forgalom irányításáért a Podok között, valamint a Podok és a külvilág között. A kube proxy biztosítja, hogy a Podok elérhetőek legyenek a cluster-en belül és (adott esetben) kívül is.
-- **cloud controller manager**: Opcionális komponens, amely a cluster és a cloud szolgáltató közötti integrációt biztosítja. Ez a komponens felelős a cloud-specifikus műveletekért, mint például új node-ok vagy load balancer-ek létrehozása, storage provisioning, stb.
-
-A kubernetes erőforrásoknak két nagy csoportja van:
-- **Namespaced**: Csak a megadott névtérben lehet létrehozni.
-- **Cluster-wide**: Nem névterekhez kötött, a cluster egészére vonatkozik.
-
-Főbb **Cluster-wide** erőforrás típusok:
-- **Node**: A Node bár az infrastruktúra része, mégis mint lekérdezhető erőforrás is megjelenik a Clusterben, és ezen keresztül tudunk róla információkat lekérdezni, konfigurálni, vagy akár módosítani az állapotát.
-- **Namespace**: Mechanizmust biztosítanak az erőforrások csoportjainak elkülönítésére egyetlen Cluster-en belül. A Namespaced erőforrások neveinek egyedinek kell lenniük egy névtéren belül, viszont a névterek között már nem.
-- **CustomResourceDefinition**: Lehetővé teszi, hogy saját erőforrás típusokat definiáljunk, amiket utána ugyanúgy használhatunk, mint a beépített erőforrásokat. Ez egy nagyon hasznos eszköz, amivel a cluster funkcionalitását ki tudjuk terjeszteni a saját igényeink szerint.
-
-Főbb **Namespaced** erőforrás típusok:
-- **Pod**: A Kubernetes legkisebb egysége, amely egy vagy több konténert futtat, amelyek megosztják egymással a Node erőforrásainak egy részét. A Pod egy logikai egységet képez, aminek a konténerei mindig ugyanazon a Node-on futnak. Podokat standalone módon is létrehozhatunk, viszont ez nem egy perzisztens megoldás, ezért általában magasabb szintű erőforrások (pl.: ReplicaSet, Deployment, stb...) kezelik őket. A managelt Podok nevei egyedi, de nem perzisztens azonosítóval végződnek, ami a manager ReplicaSet és a Pod azonosítóiból áll össze.
-- **ReplicaSet**: Manager erőforrás, amely Podokat kezel. Biztosítja, hogy egy adott számú Pod mindig fusson a cluster-en. Ha egy Pod eltűnik, a ReplicaSet automatikusan létrehoz helyette egy újat, hogy fenntartsa a futó Podok kívánt számát. A neve egyedi, de nem perzisztens azonosítóval végződik, amelyet a managelt Podok is megörökölnek.
-- **Deployment**: Manager erőforrás, amely egy ReplicaSet-et kezel. A Deployment rolling-update és rollback funkciót biztosít egyazon ReplicaSet különböző verziói között.
-- **StatefulSet**: Manager erőforrás, amely egy vagy több Podot kezel, amelyek nevei egyedi, PERZISZTENS azonosítóval rendelkeznek (inkrementális zero-based index). Ahogy a neve is mutatja, ez a típus olyan alkalmazásokhoz optimális, amelyek állapotot tárolnak, és szükségük van egyedi azonosítókra a Podok között (pl.: adatbázisok). Itt is meg lehet határozni Replica számot, de a StatefulSet nem ReplicaSet-et használ, hanem közvetlenül kezeli a Podokat.
-- **DaemonSet**: Manager erőforrás, amely pontosan egy Podot futtat minden Node-on, mindenkor. Ez olyan alkalmazásokhoz optimális, amelyeknek minden Node-on futniuk kell (pl.: loggyűjtők, monitoring ügynökök, stb...).
-- **Service**: Több típusa van:
-    - **ClusterIP**: Ez a default típus, amely egy virtuális IP címet biztosít, és ezen keresztül load balancing szolgáltatást végez a mögöttes Podok között.
-    - **NodePort**: Ez a típus egy portot nyit meg a clusteren egy előre meghatározott tartományból (by-default: 30000-32767), amelyen keresztül elérhetővé teszi a mögöttes Podokat kívülről is. Ezen túlmenően úgy működik, mint egy ClusterIP.
-    - **Headless Service**: Ez a típus nem biztosít virtuális IP címet, és nem végez load balancing szolgáltatást a Podok között. Ezzel a típussal közvetlenül egy Pod IP címére lehet hivatkozni, ami hasznos pl.: StatefulSet esetén, ahol szükség van a Podok egyedi elérésére (pl.: [leader election](https://en.wikipedia.org/wiki/Leader_election) miatt).
-    - **LoadBalancer**: Ez a típus egy külső load balancer-t hoz létre a cloud szolgáltatónál, amelyen keresztül elérhetővé teszi a Service-t a Clusteren kívülről is.
-    - **ExternalName**: Különleges típus, amely nem IP címre, hanem egy CNAME DNS rekordra oldódik fel. Ezzel egy absztrakciós réteget tudunk felhúzni egy külső szolgáltatás köré. Arra jó, hogy elég egy helyen kezelni egy külső erőforrás elérését, egy stabil Service cím mögé rejtve.
-
-  Minden Service címezhető a következő szabály szerint: `<service-neve>.<névtér-neve>.svc.cluster.local`.
-- **Secret**: Olyan erőforrás, amely érzékeny adatokat tárol, mint például jelszavak, tokenek, vagy kulcsok. A Secret-eket általában a Podok használják a konfigurációjukhoz, anélkül, hogy az érzékeny adatok közvetlenül a Pod definíciójában szerepelnének. A Secret-ek az adatokat base64 kódolással tárolják, ami nem jelent valós védelmet, ezért fontos, hogy megfelelően kezeljük és korlátozzuk a hozzáférést ezekhez az erőforrásokhoz! Lehetőség van arra is, hogy külső titkosító megoldásokat integráljunk, hogy valódi védelmet biztosítsunk a Secret-ek számára (pl.: Sealed Secrets, KeyVault).
-- **ConfigMap**: Olyan erőforrás, amely nem érzékeny konfigurációs adatokat tárol, mint például környezeti változók, konfigurációs fájlok, parancssori argumentumok, scriptek, stb... A ConfigMap-ek lehetővé teszik, hogy a konfigurációt elkülönítsük az alkalmazás kódjától, így könnyebben kezelhetjük és frissíthetjük a konfigurációt anélkül, hogy újra kellene buildelni miattuk alkalmazás image-ket, vagy újra kellene indítani a Podokat. (A gyakorlatban ennél azért kicsit bonyolultabb a helyzet, de ez a fő koncepció.)
-
-##### Kubernetes használata
-
-Az interakció valamilyen kliens alkalmazás használatával lehetséges, amely képes kommunikálni a kube API szerverrel. A leggyakrabban használt kliens a `kubectl`, amely lehetővé teszi  erőforrások létrehozását, lekérdezését, frissítését és törlését, így könnyebben kezelhetjük a clustert.
-
-**Gyakori `kubectl` parancsok:**
-- `kubectl run`: Egy új, standalone Pod létrehozása egy adott image-ből. Jellemzően nem használjuk, mert manifest alapján szoktuk létrehozni az erőforrásokat, de teszteléshez hasznos lehet.
-- `kubectl expose`: Egy meglévő Podhoz új Service kapcsolása. Jellemzően nem használjuk, mert manifest alapján szoktuk létrehozni az erőforrásokat, de teszteléshez hasznos lehet.
-- `kubectl get`: Kubernetes erőforrások listázása.
-- `kubectl describe`: Egy erőforrás részletes információinak megtekintése.
-- `kubectl apply`: Egy erőforrás létrehozása vagy frissítése egy YAML fájl alapján.
-- `kubectl create`: Egy erőforrás létrehozása egy YAML manifest fájl alapján. Az `apply`-hoz képest kevésbé érzékeny az időtúllépésre nagy méretű manifest fájlok esetén.
-- `kubectl edit`: Egy erőforrás szerkesztése "menet közben" a default szövegszerkesztőnkben.
-- `kubectl delete`: Egy erőforrás törlése.
-- `kubectl logs`: Egy Podon futó konténer logjainak megtekintése.
-- `kubectl exec`: Parancs futtatása egy Podon futó konténerben.
-- `kubectl port-forward`: Port forwarding egy erőforráshoz, hogy elérhetővé tegyük a szolgáltatásait a helyi gépünkön keresztül.
-
-**Kubernetes manifest fájlok** YAML formátumban vannak, és tartalmazzák a létrehozandó erőforrások specifikációját. A manifest fájlok segítségével deklaratív módon definiálhatjuk (verzió kezelhetjük) az erőforrásokat, és pl. a `kubectl apply` parancs segítségével létrehozhatjuk vagy frissíthetjük ezeket az erőforrásokat a clusterben. A manifest fájlokban meg kell adni az erőforrás típusát, nevét, névterét (ha szükséges), valamint a specifikációt (spec szekció), amely tartalmazza az erőforrás konfigurációját és működését meghatározó részleteket.
-
-**Néhány példa a hivatalos Kubernetes dokumentációból:**
-- [Pod dokumentáció minimal manifest példával.](https://kubernetes.io/docs/concepts/workloads/pods/)
-- [Deployment dokumentáció minimal manifest példával.](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
-- [Service dokumentáció minimal manifest példával.](https://kubernetes.io/docs/concepts/services-networking/service/)
-- [Secret dokumentáció minimal manifest példával.](https://kubernetes.io/docs/concepts/configuration/secret/)
-
-## Ajánlott irodalom
-0. [Online Git tutorial kezdőknek](https://learngitbranching.js.org/)
-0. [Git videó kurzus magyarul](https://www.youtube.com/playlist?list=PLyriihBWoulw1KQ2aM-NMnAoVPZevfmZq)
-0. [Basic C# Tutorial kezdőknek](https://www.codecademy.com/learn/learn-c-sharp)
-0. [Comprehensive C# Hands-on Tutorial](https://dometrain.com/course/hands-on-csharp-for-beginners/?ref=nick-chapsas&promo=youtube)
-0. [The Catalog of Design Patterns](https://refactoring.guru/design-patterns/catalog)
-0. [Angular Tutorials](https://angular.dev/tutorials)
-0. [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet)
-0. [REST API Tutorial](https://restfulapi.net/)
-0. [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS)
-0. [How to maximize GitHub Copilot’s agentic capabilities](https://github.blog/ai-and-ml/github-copilot/how-to-maximize-github-copilots-agentic-capabilities/)
-0. Miért jó a cloud, mire jó, hogyan működik: [AZ900 basic online kurzus](https://learn.microsoft.com/en-us/training/courses/az-900t00)
-0. Különleges DB kurzus, túl az RDBMS rendszereken: [Azure Cosmos DB Essentials Series](https://www.youtube.com/playlist?list=PLLasX02E8BPDd2fKwLCHnmWoyo4bL-oKr)
-0. [CKAD Full Course for Beginner](https://www.youtube.com/watch?v=4rxIiOmKmiE&t=2052s)
-0. [Understanding Dev Containers: A Complete Guide for Developers](https://daminibansal.medium.com/understanding-dev-containers-a-complete-guide-for-developers-c15b637915d3)
-0. [Helm "Mini Course"](https://www.youtube.com/playlist?list=PLSwo-wAGP1b8svO5fbAr7ko2Buz6GuH1g)
-0. [ArgoCD Tutorial for Beginners | GitOps CD for Kubernetes](https://youtu.be/MeU5_k9ssrs)
-0. [What is the Model Context Protocol (MCP)?](https://modelcontextprotocol.io/docs/getting-started/intro)
-0. [The Twelve-Factor App](https://12factor.net/)
-0. Konyhakész megoldások a leggyakoribb microservice problémákra és mintázatokra: [Dapr](https://dapr.io/)
-0. Infra management: [Infrastructure as Code (IaC) Tutorials](https://www.youtube.com/playlist?list=PLy7NrYWoggjzmPAyfDQgthSgx6VEVlS0-)
-0. GO kurzus: [A Tour of Go](https://go.dev/tour/welcome/1)
+Ez a megvalositas a `REQSPEC.md` 31. soraig tarto kovetelmennyel kompatibilis scope-ra keszult. A microservice, Kubernetes CD es ArgoCD reszek kulon, magasabb szintu bovitesek.

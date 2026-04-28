@@ -1,18 +1,29 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { of } from 'rxjs';
 
-import { Heroes } from './heroes';
+import { HeroesComponent } from './heroes';
+import { HeroService } from '../hero-service';
+import { MessageService } from '../message-service';
 
-describe('Heroes', () => {
-  let component: Heroes;
-  let fixture: ComponentFixture<Heroes>;
+describe('HeroesComponent', () => {
+  let component: HeroesComponent;
+  let fixture: ComponentFixture<HeroesComponent>;
 
   beforeEach(async () => {
+    const heroServiceMock = {
+      getHeroes: () => of([]),
+    };
+
     await TestBed.configureTestingModule({
-      imports: [Heroes]
+      imports: [HeroesComponent],
+      providers: [
+        MessageService,
+        { provide: HeroService, useValue: heroServiceMock },
+      ],
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Heroes);
+    fixture = TestBed.createComponent(HeroesComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
