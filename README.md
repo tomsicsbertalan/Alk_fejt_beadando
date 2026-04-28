@@ -46,7 +46,7 @@ npm install
 npm start -- --port 4300
 ```
 
-Alapertelmezett fejlesztoi URL: `http://localhost:4200`
+Alapertelmezett fejlesztoi URL: `http://localhost:4300`
 
 ## Hasznalat
 
